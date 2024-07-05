@@ -20,19 +20,19 @@ function showSlides(n) {
     let i; // obtem todos os elementos com a classe "mySlides".
     let slides = document.getElementsByClassName("mySlides"); // obtem todos os elementos com a classe "ponto".
     let pontos = document.getElementsByClassName("ponto"); //  obtem todos os elementos com a classe "ponto".
-   // Se o índice de slide for maior que o número total de slides, redefine para o primeiro slide.
-    if (n > slides.length) { 
-        slideIndex = 1 
+    // Se o índice de slide for maior que o número total de slides, redefine para o primeiro slide.
+    if (n > slides.length) {
+        slideIndex = 1
     }
-    // Se o índice de slide for menorr que o número 1, redefine para o ultimo slide.
-    if (n < 1) { 
-        slideIndex = slides.length 
+    // Se o índice de slide for menor que o número 1, redefine para o ultimo slide.
+    if (n < 1) {
+        slideIndex = slides.length
     }
     // esconde todos os slides.
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-     // remove a classe "active" de todos os pontos.
+    // remove a classe "active" de todos os pontos.
     for (i = 0; i < pontos.length; i++) {
         pontos[i].className = pontos[i].className.replace(" active", "");
     }
@@ -41,3 +41,12 @@ function showSlides(n) {
     // adiciona a classe "active" ao ponto correspondente ao slide atual.
     pontos[slideIndex - 1].className += " active";
 }
+
+/* Para o slideshow funciona através da variável 'slideIndex', que controla o índice do slide exibido. 
+A função 'showSlides' exibe o slide baseado no 'slideIndex', ocultando os outros e atualizando a navegação.
+ As funções `plusSlides` e `currentSlide` ajustam o 'lideIndex' e chamam 'showSlides' para refletir essas mudanças:
+ 'plusSlides' navega entre os slides e `currentSlide` define um slide específico.
+ Na `showSlides`, todos os slides são inicialmente ocultados e os pontos de navegação perdem a classe "active". 
+ O slide correspondente ao `slideIndex` é exibido e seu ponto de navegação recebe a classe "active".
+  Isso mantém a navegação sincronizada com o slide atual, proporcionando uma experiência interativa e coesa. 
+Eventos de clique nos botões e pontos de navegação ajustam o `slideIndex` e atualizam a exibição dos slides.*/
