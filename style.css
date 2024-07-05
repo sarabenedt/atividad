@@ -1,88 +1,54 @@
-* {
-    box-sizing: border-box
-}
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-.anterior,
-.proximo {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.proximo {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.anterior:hover,
-.proximo:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
+Você enviou
+/* Estiliza o texto descritivo nos slides */
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    color: #f2f2f2;  /* Define a cor do texto */
+    font-size: 15px;  /* Define o tamanho da fonte */
+    padding: 8px 12px;  /* Adiciona espaço interno */
+    position: absolute;  /* Posiciona absolutamente dentro do contêiner do slide */
+    bottom: 8px;  /* Posiciona na parte inferior do contêiner */
+    width: 100%;  /* Define a largura como 100% do contêiner */
+    text-align: center;  /* Centraliza o texto */
 }
 
+/* Estiliza o texto numérico dos slides */
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+    color: #f2f2f2;  /* Define a cor do texto */
+    font-size: 12px;  /* Define o tamanho da fonte */
+    padding: 8px 12px;  /* Adiciona espaço interno */
+    position: absolute;  /* Posiciona absolutamente dentro do contêiner do slide */
+    top: 0;  /* Posiciona na parte superior do contêiner */
 }
 
+/* Estiliza os pontos de navegação */
 .ponto {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    cursor: pointer;  /* Altera o cursor ao passar sobre os pontos */
+    height: 15px;  /* Define a altura dos pontos */
+    width: 15px;  /* Define a largura dos pontos */
+    margin: 0 2px;  /* Adiciona espaçamento horizontal entre os pontos */
+    background-color: #bbb;  /* Define a cor de fundo dos pontos */
+    border-radius: 50%;  /* Deixa os pontos redondos */
+    display: inline-block;  /* Exibe os pontos em linha */
+    transition: background-color 0.6s ease;  /* Adiciona uma transição suave na mudança de cor */
 }
 
-.active,
-.ponto:hover {
-    background-color: #717171;
+/* Estiliza o ponto ativo e o ponto em hover */
+.active, .ponto:hover {
+    background-color: #717171;  /* Define a cor de fundo do ponto ativo e do ponto em hover */
 }
 
+/* Estiliza a transição de fade para os slides */
 .fade {
-    animation-name: fade;
-    animation-duration: 2.5s;
+    animation-name: fade;  /* Define o nome da animação */
+    animation-duration: 2.5s;  /* Define a duração da animação */
 }
 
+/* Define a animação de fade */
 @keyframes fade {
     from {
-        opacity: .2
+        opacity: .2;  /* Define a opacidade inicial */
     }
-
     to {
-        opacity: 1
+        opacity: 1;  /* Define a opacidade final */
     }
 }
