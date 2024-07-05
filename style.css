@@ -1,3 +1,29 @@
+/* Define que o box-sizing para todos os elementos será border-box, fazendo com que padding e border sejam incluídos nas dimensões totais do elemento */
+* {
+    box-sizing: border-box;
+}
+
+/* Estiliza o contêiner do slideshow */
+.slideshow-container {
+    max-width: 1000px;  /* Define a largura máxima do contêiner */
+    position: relative;  /* Permite posicionar elementos absolutamente em relação a este contêiner */
+    margin: auto;  /* Centraliza o contêiner horizontalmente */
+}
+
+/* Estiliza os slides, escondendo-os por padrão */
+.mySlides {
+    display: none;  /* Oculta os slides */
+}
+
+/* Estiliza os botões de navegação (anterior e próximo) */
+.anterior, .proximo {
+    cursor: pointer;  /* Altera o cursor ao passar sobre os botões */
+    position: absolute;  /* Posiciona os botões absolutamente dentro do contêiner */
+    top: 50%;  /* Centraliza verticalmente os botões */
+    width: auto;  /* Ajusta a largura automaticamente */
+    margin-top: -22px;  /* Ajusta a posição vertical dos botões */
+}
+
 /* Estiliza o texto descritivo nos slides */
 .text {
     color: #f2f2f2;  /* Define a cor do texto */
