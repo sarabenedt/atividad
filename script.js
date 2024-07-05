@@ -44,9 +44,9 @@ function showSlides(n) {
 
 /* Para o slideshow funciona através da variável 'slideIndex', que controla o índice do slide exibido. 
 A função 'showSlides' exibe o slide baseado no 'slideIndex', ocultando os outros e atualizando a navegação.
- As funções `plusSlides` e `currentSlide` ajustam o 'lideIndex' e chamam 'showSlides' para refletir essas mudanças:
- 'plusSlides' navega entre os slides e `currentSlide` define um slide específico.
- Na `showSlides`, todos os slides são inicialmente ocultados e os pontos de navegação perdem a classe "active". 
- O slide correspondente ao `slideIndex` é exibido e seu ponto de navegação recebe a classe "active".
+ As funções 'plusSlides' e 'currentSlide' ajustam o 'lideIndex' e chamam 'showSlides' para refletir essas mudanças:
+ 'plusSlides' navega entre os slides e 'currentSlide' define um slide específico.
+ Na 'showSlides', todos os slides são inicialmente ocultados e os pontos de navegação perdem a classe "active". 
+ O slide correspondente ao 'slideIndex' é exibido e seu ponto de navegação recebe a classe "active".
   Isso mantém a navegação sincronizada com o slide atual, proporcionando uma experiência interativa e coesa. 
-Eventos de clique nos botões e pontos de navegação ajustam o `slideIndex` e atualizam a exibição dos slides.*/
+Eventos de clique nos botões e pontos de navegação ajustam o 'slideIndex' e atualizam a exibição dos slides.*/
